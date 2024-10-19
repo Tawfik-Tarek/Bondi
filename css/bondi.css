@@ -1,0 +1,15 @@
+:root {
+  --dark-color: #19283f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* start navbar */
+
+/* end navbar */
