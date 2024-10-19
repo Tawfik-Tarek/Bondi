@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bondi is a free Bootstrap 5 HTML5 business website template. It is a clean and minimal design for business, agency, corporate, and other related websites."
+    />
+    <link rel="icon" type="image/x-icon" href="./imgs/logo.png">
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/bondi.css" />
@@ -16,7 +21,57 @@
   </head>
   <body>
     <!-- Start Navbar -->
-     
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./imgs/logo.png" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item">
+              <a class="nav-link p-lg-3 active" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" aria-current="page" href="#services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" aria-current="page" href="#portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" aria-current="page" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" aria-current="page" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="search d-none d-lg-block ps-3 pe-3">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <a href="#" class="btn main-btn rounded-pill btn-primary d-none d-lg-block">Login</a>
+        </div>
+      </div>
+    </nav>
     <!-- End Navbar -->
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/all.min.js"></script>

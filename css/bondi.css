@@ -1,5 +1,6 @@
 :root {
   --dark-color: #19283f;
+  --link-color: #00c6bf;
 }
 
 html {
@@ -11,5 +12,33 @@ body {
 }
 
 /* start navbar */
+.navbar {
+  background-color: var(--dark-color);
+  .container > div > ul li a {
+    color: white;
+  }
+  .container > div > ul li a.active,
+  .container > div > ul li a:hover,
+  .container > div > ul li a:focus {
+    color: var(--link-color);
+  }
 
+  .container .navbar-toggler {
+    color: white;
+    border-color: white;
+    font-size: 25px;
+  }
+
+  .container .navbar-toggler:focus{
+    box-shadow: none;
+  }
+}
+
+.search {
+  color: var(--link-color);
+  border-left: solid 1px var(--link-color);
+  svg {
+    cursor: pointer;
+  }
+}
 /* end navbar */
