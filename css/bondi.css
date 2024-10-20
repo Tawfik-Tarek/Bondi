@@ -1,6 +1,8 @@
 :root {
   --dark-color: #19283f;
   --link-color: #00c6bf;
+  --red-color: #ff3150;
+  --btn-text-color: #ffc501;
 }
 
 html {
@@ -10,6 +12,22 @@ html {
 body {
   font-family: "Roboto", sans-serif;
 }
+
+/* start components */
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--btn-text-color);
+  padding: 0.5rem 1rem;
+}
+
+
+
+.main-btn:hover {
+  background-color: var(--btn-text-color);
+  color: var(--red-color);
+}
+
+/* end components */
 
 /* start navbar */
 .navbar {
@@ -29,7 +47,7 @@ body {
     font-size: 25px;
   }
 
-  .container .navbar-toggler:focus{
+  .container .navbar-toggler:focus {
     box-shadow: none;
   }
 }
@@ -42,3 +60,10 @@ body {
   }
 }
 /* end navbar */
+
+/* start landing */
+section.landaing {
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 72px);
+}
+/* end landing */
