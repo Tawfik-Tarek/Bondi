@@ -3,6 +3,9 @@
   --link-color: #00c6bf;
   --red-color: #ff3150;
   --btn-text-color: #ffc501;
+  --white-color: #ffffff;
+  --gray-color: #eff7fa;
+  --features-p-color: #a8b9c0;
 }
 
 html {
@@ -13,6 +16,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a{
+  text-decoration: none;
+}
+
 /* start components */
 .main-btn {
   background-color: var(--red-color);
@@ -20,12 +27,11 @@ body {
   padding: 0.5rem 1rem;
 }
 
-
-
 .main-btn:hover {
   background-color: var(--btn-text-color);
   color: var(--red-color);
 }
+
 
 /* end components */
 
@@ -64,6 +70,49 @@ body {
 /* start landing */
 section.landaing {
   background-color: var(--dark-color);
-  min-height: calc(100vh - 72px);
+  min-height: calc(100dvh - 70px);
 }
 /* end landing */
+
+/* start services */
+
+.main-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+  height: 1px;
+  background-color: var(--link-color);
+  bottom: -20px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+#services .container .icon-holder {
+  height: 200px;
+}
+
+#services .container .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#services .container .icon-holder .number {
+  font-size: 12rem;
+  color: var(--gray-color);
+}
+
+#services .container .icon-holder .icon {
+  font-size: 4rem;
+  color: var(--link-color);
+  z-index: 1;
+}
+
+#services .container .feat h4 {
+  color: var(--btn-text-color);
+}
+#services .container .feat p {
+  color: var(--features-p-color);
+}
+
+/* end services */
